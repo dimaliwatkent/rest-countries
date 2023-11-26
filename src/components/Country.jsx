@@ -23,8 +23,10 @@ const Country = () => {
     <div>
       <h1>{country[0].name.common}</h1>
       <p>Population: {country[0].population}</p>
-      <p>Area: {country[0].area}</p>
-      {/* Add more country details as needed */}
+      <div class="bg-white dark:bg-gray-800">
+        <h1 class="text-gray-900 dark:text-white">Dark mode</h1>
+        <p class="text-gray-600 dark:text-gray-300">Lorem ipsum...</p>
+      </div>
     </div>
   );
 };
