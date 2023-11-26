@@ -35,12 +35,14 @@ const Navbar = () => {
             {theme === "dark" ? (
               <>
                 <BsMoonStarsFill className="text-dark-text" />
-                <span className="text-dark-text">Dark Mode</span>
+                <span className="text-dark-text hidden sm:flex">Dark Mode</span>
               </>
             ) : (
               <>
                 <IoSunny className="text-light-text" />
-                <span className="text-light-text">Dark Mode</span>
+                <span className="text-light-text hidden sm:flex">
+                  Dark Mode
+                </span>
               </>
             )}
           </div>

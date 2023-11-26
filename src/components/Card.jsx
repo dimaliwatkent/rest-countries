@@ -5,15 +5,15 @@ const Card = ({ name, image, population, region, capital, ccn3 }) => {
   return (
     <>
       <Link to={`/country/${ccn3}`}>
-        <div className="card max-w-xs">
+        <div className="card w-64 bg-light-elements dark:bg-dark-elements rounded-lg overflow-hidden shadow hover:shadow-lg">
           <img
             src={image}
             alt={`${name} flag`}
-            className="aspect-[320/213] object-fill w-full h-full"
+            className="aspect-[320/180] object-fill w-full h-full"
           />
-          <div>
-            <h2>{name}</h2>
-            <div>
+          <div className="p-5 text-light-text dark:text-dark-text">
+            <h2 className="text-lg font-bold py-3">{name}</h2>
+            <div className="text-sm">
               <div className="flex gap-2">
                 <p>
                   <strong>Population:</strong>
